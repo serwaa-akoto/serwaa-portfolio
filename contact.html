@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Serwaa Chinaza Dauda using the website contact form.">
+  <title>Contact — Serwaa Chinaza Dauda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo" aria-label="Serwaa Chinaza Dauda home">Serwaa Chinaza Dauda</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro container">
+      <p class="eyebrow">Contact</p>
+      <h1>Contact Me</h1>
+      <p class="lead">Enter your details and message below. The form will check that each field is complete.</p>
+    </section>
+    <section class="container contact-layout">
+      <aside class="contact-aside">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Send me a message</h2>
+        <p>Enter your contact details and message in the form. All fields are required.</p>
+      </aside>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+          <span class="error" id="name-error"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required>
+          <span class="error" id="email-error"></span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" aria-describedby="phone-error" required>
+          <span class="error" id="phone-error"></span>
+        </div>
+        <div class="field">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" aria-describedby="message-error" required></textarea>
+          <span class="error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn">Validate Form</button>
+        <p id="form-success" class="success" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="footer-name">Serwaa Chinaza Dauda</a>
+    <p>Student portfolio <span>·</span> <span id="year"></span></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

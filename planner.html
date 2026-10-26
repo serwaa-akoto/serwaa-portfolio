@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use Serwaa Chinaza Dauda's academic planner to add, complete and delete tasks.">
+  <title>Academic Planner — Serwaa Chinaza Dauda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo" aria-label="Serwaa Chinaza Dauda home">Serwaa Chinaza Dauda</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro container">
+      <p class="eyebrow">Planner</p>
+      <h1>Academic Planner</h1>
+      <p class="lead">Add your study tasks below. Mark each task when it's done, or delete it if you no longer need it.</p>
+    </section>
+    <section class="container planner-shell" aria-labelledby="planner-title">
+      <div class="planner-heading">
+        <div><p class="eyebrow">Task list</p><h2 id="planner-title">My Tasks</h2></div>
+      </div>
+      <form id="task-form" class="planner-form" novalidate>
+        <label for="task-input" class="sr-only">New task</label>
+        <input type="text" id="task-input" placeholder="Enter a task" maxlength="100" autocomplete="off">
+        <button type="submit" class="btn">Add Task</button>
+      </form>
+      <p id="task-error" class="error" role="alert"></p>
+      <p id="task-count" class="task-count muted" aria-live="polite"></p>
+      <ul id="task-list" class="task-list" aria-label="Your tasks"></ul>
+      <div class="planner-footer"><p>Your tasks are saved in this browser.</p><button id="clear-completed" class="text-link-button">Clear Completed</button></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="footer-name">Serwaa Chinaza Dauda</a>
+    <p>Student portfolio <span>·</span> <span id="year"></span></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
